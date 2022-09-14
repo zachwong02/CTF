@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Sep  9 23:45:33 2022
+Invocation: foremost word.exe 
+Output directory: /home/parallels/CTF/apuboh2019-challenge/Preliminaries/Steganography/Forsaken/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: word.exe
+Start: Fri Sep  9 23:45:33 2022
+Length: 56 KB (58351 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      56 KB 	          0 	  (402 x 268)
+Finish: Fri Sep  9 23:45:33 2022
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Sep  9 23:45:33 2022
