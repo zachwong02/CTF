@@ -1,0 +1,61 @@
+import random
+import os
+import shutil
+
+
+
+
+def create_folder():
+
+	number = random.randint(1,20)
+
+	filename = "New Folder "
+
+	new_filename = filename+"("+str(number)+")"
+
+	print(new_filename)
+
+
+	try:
+		os.mkdir(new_filename)
+
+	except:
+		print("File Exists %s" %(new_filename))
+		create_folder()
+
+
+
+
+
+def copy_script():
+	folders = list(filter(os.path.isdir, os.listdir()))
+	current_dir = os.path.abspath(os.getcwd())
+	make_dir_script = current_dir+"/make_dir_new.py"
+
+	for i in folders:
+		copy_path = current_dir+"/"+i+"/"+"make_dir.py"
+		os.remove(copy_path)
+		shutil.copyfile(make_dir_script,copy_path)
+		print(copy_path)
+		print(make_dir_script)
+
+
+def create_subfolder2():
+	folders = list(filter(os.path.isdir, os.listdir()))
+	current_dir = os.path.abspath(os.getcwd())
+	make_dir_script = current_dir+"/make_dir.py"
+
+	for i in folders:
+		copy_path = current_dir+"/"+i+"/"+"make_dir.py"
+		command = "python3 '%s' " %(copy_path)
+		os.system(command)
+
+
+counter = 0
+
+
+while(counter!=20):
+	create_folder()
+	counter+=1
+
+

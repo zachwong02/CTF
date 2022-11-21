@@ -1,0 +1,24 @@
+# Nmap 7.93 scan initiated Thu Oct 27 13:25:49 2022 as: nmap -sC -sV -oN nmap_init -vv -Pn 192.168.100.107
+Nmap scan report for 192.168.100.107
+Host is up, received user-set (1.0s latency).
+Scanned at 2022-10-27 13:25:49 +08 for 11s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f79621663b772d1a5717aafb3417f2bb (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCg+FOLF5YWUUYdQPvH3m8HtDPlPHSRNVPrrMNAayrB6zTahWfHh7hSiM6jf/jUu15uQusiQCp2Lcqok5xaDSgz9xYkb8B/FukmCjYpoOBk5S8Na1EnOoXEq+mC/xhWAbwGdtI3JLl+Sn8a1jalCpakbhEhAOn9RNzhdoSJWJJLy6Omq59IX/W5v60UziEYRqv7ROjbEJ1T/Ay7ZukErO2sGTWJyRGWWaPbILmJaugmV1ssNAnX5SKt4qKOiIVS7sJLcuXuuHw+m34lmbWlZfUei4udykXPulm+SGBQxI+QE0MwxawXGfh58hOK/66y4nqew1qPCu9vcTiC6yt9F4Cz
+|   256 f736a14a1d2f1922fddda11c26bd0a56 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN0iB+hrdli39yjSPUrv0fi4EFFmRsw6xfG6ZJ4m/yD9vYMoObbH3dw5lI5ZJ5jChO55W3pCgM7f+yvnnuNlqvE=
+|   256 3ca34c8ed211e5d20bb3f14a94dd21b7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA8w7A5kY39Tfk66BtoFnF3r0/FctfG4YHcZTaZUZoC4
+80/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct 27 13:26:00 2022 -- 1 IP address (1 host up) scanned in 11.15 seconds
